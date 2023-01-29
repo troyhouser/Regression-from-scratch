@@ -11,8 +11,7 @@ print(fit)
 fit_params <- fit$coefficients
 
 # Plot
-plot(x=X, y=y, cex = 1, col = "grey",
-     main = "Explain Wages with Height", xlab = "Height", ylab = "Wages")
+plot(x=X, y=y, cex = 1, col = "grey")
 
 # Draw the regression line (intercept, slope)
 abline(a=fit_params[[1]], b=fit_params[[2]], col="blue")
@@ -31,8 +30,7 @@ print(beta_hat)
 
 
 # Plot
-plot(x=X, y=y, cex = 1, col = "grey",
-     main = "Explain Wages with Height", xlab = "Height", ylab = "Wages")
+plot(x=X, y=y, cex = 1, col = "grey")
 
 # Draw the previous regression line
 abline(a=fit_params[[1]], b=fit_params[[2]], col="blue")
@@ -61,8 +59,7 @@ gradient_descent <- function(X, y, lr, epochs)
 }
 
 # Plot
-plot(x=X, y=y, cex = 1, col = "grey",
-     main = "Explain Wages with Height", xlab = "Height", ylab = "Wages")
+plot(x=X, y=y, cex = 1, col = "grey")
 
 beta_hat <- gradient_descent(X, y, 0.1, 200)
 print(beta_hat)
